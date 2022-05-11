@@ -6,18 +6,24 @@ This code uses Timer/Counter 0 in Fast PWM mode with the `OCR0B` match and `TCNT
 
 The following screenshots show the output waveforms at different frequencies and duty cycles. Y axis scale is 2V/div.
 
+## 50% duty ratio, ~ 7.8 kHz
+<p align="center">
+<img src="/plots/50fast.png" width="600" />
+</p>
 
-![](/plots/50fast.png)
-*50% duty ratio, ~ 7.8 kHz*
+## 6% duty ratio, ~ 7.8 kHz
+<p align="center">
+<img src="/plots/6fast.png" width="600" />
+</p>
 
-![](/plots/6fast.png)
-*6% duty ratio, ~ 7.8 kHz*
+## 6% duty ratio, ~ 61 Hz
+<p align="center">
+<img src="/plots/6slow.png" width="600" />
+</p>
 
-![](/plots/6slow.png)
-*6% duty ratio, ~ 61 Hz*
-
-![](/plots/50slow.png)
-*50% duty ratio, ~ 61 Hz*
-
+## 50% duty ratio, ~ 61 Hz
+<p align="center">
+<img src="/plots/50slow.png" width="600" />
+</p>
 
 **Acknowledgement**: I learned the basics of microcontroller programming in assembly as a Teaching Assistant for Yale's Mechatronics Course ([MENG 390](https://courses.yale.edu/?details&srcdb=202101&crn=23090)). This code is based on code skeletons originally developed by the course instructor.
