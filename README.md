@@ -6,6 +6,15 @@ This code uses Timer/Counter 0 in Fast PWM mode with the `OCR0B` match and `TCNT
 
 The following screenshots show the output waveforms at different frequencies and duty cycles. Y axis scale is 2V/div.
 
+
+```mermaid
+flowchart LR
+
+timer[TCNT0 \n\n frequency: TCCR0B, CS0 bits \n duty cycle: OCR0B] -->|OCR0B match interrupt| pinlow(ISR: pin D6 LOW)
+timer -->|TCNT0 overflow interrupt| pinhigh(ISR: pin D6 HIGH)
+
+```
+
 ## 50% duty ratio, ~ 7.8 kHz
 <p align="center">
 <img src="/plots/50fast.png" width="600" />
